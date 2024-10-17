@@ -62,7 +62,7 @@ const PaginationSec = ({
           className={`${
             page === "..."
               ? "cursor-default"
-              : "hidden sm:inline px-8 py-6 font-semibold text-xl mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md hover:bg-green-500 hover:text-white"
+              : "hidden sm:inline px-8 py-6 font-semibold text-xl mx-1 text-gray-700 transition-colors duration-300 transform  rounded-md hover:bg-green-500 hover:text-white"
           } ${currentPage === page ? "bg-green-500 text-white" : ""}`}
           onClick={(e) => {
             e.preventDefault();
