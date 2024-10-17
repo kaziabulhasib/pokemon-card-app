@@ -7,7 +7,7 @@ const Pokemon = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
-  const API = "https://pokeapi.co/api/v2/pokemon?limit=256";
+  const API = "https://pokeapi.co/api/v2/pokemon?limit=356";
   const fetchPokemon = async () => {
     try {
       const res = await fetch(API);
@@ -42,8 +42,10 @@ const Pokemon = () => {
 
   if (loading) {
     return (
-      <div>
-        <h1>Loading ...........</h1>
+      <div className='flex items-center justify-center space-x-8'>
+        <div className='w-6 h-6 rounded-full animate-pulse  bg-violet-600'></div>
+        <div className='w-6 h-6 rounded-full animate-pulse  bg-violet-600'></div>
+        <div className='w-6 h-6 rounded-full animate-pulse  bg-violet-600'></div>
       </div>
     );
   }
@@ -56,7 +58,7 @@ const Pokemon = () => {
   }
   return (
     <div className='container'>
-      <h1 style={{ margin: "24px auto" }}>Hello pokemon</h1>
+      <h1 className='my-6'>Hello pokemon</h1>
       <div className='pokemon-search'>
         <input
           type='text'
