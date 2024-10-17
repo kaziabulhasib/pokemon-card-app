@@ -36,7 +36,7 @@ const PaginationSec = ({
         className={`flex items-center justify-center px-8 py-6 font-semibold text-xl mx-1 text-gray-500 capitalize bg-white rounded-md ${
           currentPage === 1
             ? "cursor-not-allowed"
-            : "hover:bg-blue-500 hover:text-white"
+            : "hover:bg-green-500 hover:text-white"
         }`}
         onClick={(e) => {
           e.preventDefault();
@@ -62,8 +62,8 @@ const PaginationSec = ({
           className={`${
             page === "..."
               ? "cursor-default"
-              : "hidden sm:inline px-8 py-6 font-semibold text-xl mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md hover:bg-blue-500 hover:text-white"
-          } ${currentPage === page ? "bg-blue-500 text-white" : ""}`}
+              : "hidden sm:inline px-8 py-6 font-semibold text-xl mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md hover:bg-green-500 hover:text-white"
+          } ${currentPage === page ? "bg-green-500 text-white" : ""}`}
           onClick={(e) => {
             e.preventDefault();
             if (page !== "...") {
@@ -79,7 +79,7 @@ const PaginationSec = ({
         className={`flex items-center justify-center px-8 py-6 font-semibold text-xl mx-1 text-gray-500 capitalize bg-white rounded-md ${
           currentPage === totalPages
             ? "cursor-not-allowed"
-            : "hover:bg-blue-500 hover:text-white"
+            : "hover:bg-green-500 hover:text-white"
         }`}
         onClick={(e) => {
           e.preventDefault();
