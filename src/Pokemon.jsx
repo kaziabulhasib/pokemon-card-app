@@ -71,6 +71,7 @@ const Pokemon = () => {
         <div className='w-6 h-6 rounded-full animate-pulse bg-green-500'></div>
         <div className='w-6 h-6 rounded-full animate-pulse bg-green-500'></div>
         {/* new code comming  */}
+        {/* new code comming  */}
       </div>
     );
   }
